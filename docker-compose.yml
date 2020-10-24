@@ -1,0 +1,9 @@
+version: "3"
+services:
+    db:
+        build:
+          context: .
+          dockerfile: mssql.Dockerfile
+        container_name: mssql_local
+        ports:
+          - "1433:1433"
